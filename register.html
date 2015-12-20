@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<script language="JavaScript" >
+
+function getSubmit(){
+var xmlhttp;
+xmlhttp = new XMLHttpRequest();
+xmlhttp.open("GET","insert1.php?name="+document.getElementById("name").value+"&age="+document.getElementById("age").value+"&address="+document.getElementById("address").value+"&room="+document.getElementById("room").value+"&pid="+document.getElementById("pid").value,false);
+xmlhttp.send(null);
+}
+</script>
+ 
+<style>
+body {
+    background-image: url("7.png");
+    background-position: center top;
+    background-size: 100% auto;
+}
+</style>
+<body>
+
+<a href="sum2.html">
+  <img src="cal.jpg" alt="CALCULATE" style="width:80px;height:80px;border:0" align ="left">
+</a>
+
+<pre>
+
+
+
+			
+			<font size=4>    WELCOME TO PAYROLL GURU 
+
+				NAME :  <input type="text" name="name1" id="name"/>
+				  
+
+				AGE  :  <input type="text" name="age1" id="age"/>
+
+				SEX  : <input type ="radio" value ="m">male   <input type ="radio" value ="m">female
+
+			     		
+			     ADDRESS : <input type="text" name="address1" id="address"/> 
+
+			     COMPANY : <input type="text" name="room1" id="room"/>
+		
+              AREA OF SPECILISATION  : <input type="text" name="pid1" id="pid"/>
+
+		       DATE OF BIRTH : <input type="date" name="date" min="2015-10-12"><br><br>
+
+	        EXPERIENCE(in years) : <select ><option value="">---Select---</option><option>1</option>
+<<option>2</option><option>3</option><option>4</option><option>5</option><option>MORE THAN 5</option></select>
+
+
+
+					
+			<a href="done.html">	<input type="submit" value="SAVE" onclick="getSubmit();" /> </a>          <input type ="reset" value="CANCEL" onclick="window.location.href='patient.html'">
+
+
+
+			
+</font>
+</pre>
+</body>
+</html>
